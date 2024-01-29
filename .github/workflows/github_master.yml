@@ -48,4 +48,8 @@ jobs:
 
       - name: NPM Version
         run: npm version
-          
+
+      - name: NPM publish
+        run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
