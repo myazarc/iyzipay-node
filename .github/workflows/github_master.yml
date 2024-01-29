@@ -50,9 +50,6 @@ jobs:
         with:
           node-version: '14.x'
           registry-url: 'https://registry.npmjs.org'
-          
-      - name: NPM CI
-        run: npm ci
       
       - name: NPM publish
         run: npm publish
