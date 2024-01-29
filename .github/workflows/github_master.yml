@@ -49,6 +49,11 @@ jobs:
       - name: NPM Version
         run: npm version
 
+      - name: Authenticate with NPM
+        run: npm adduser
+        env:
+          CI: false 
+      
       - name: NPM publish
         run: npm publish
         env:
