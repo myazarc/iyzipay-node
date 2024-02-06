@@ -50,7 +50,10 @@ jobs:
         with:
           node-version: '14.x'
           registry-url: 'https://registry.npmjs.org'
-      
+
+      - name: NPM Version
+        run: npm version
+
       - name: NPM publish
         run: npm publish
         env:
